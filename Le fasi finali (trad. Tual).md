@@ -1,3 +1,5 @@
+_traduzione di M.Terzi e L.M.Pedretti ([Ethereum Italia](www.ethereum-italia.it)) da un articolo originale di S. Tual, apparso [qui](https://blog.ethereum.org/2015/07/27/final-steps/)._
+
 # Le fasi finali
 
 Un aggiornamento come promesso: tutti i sistemi sono ora “pronti” sul lato tecnico e abbiamo intenzione di rilasciare Frontier questa settimana.
@@ -51,27 +53,29 @@ o (se avete avuto già installato),
 sudo pip install bitcoin --upgrade
 ```
 
-Un ultimo passo, se si utilizza Eth, abbiamo recentemente di supportare il nuovo parametro blocco Genesi, quindi avrai bisogno di prendere la corretta versione del software per essere pronti per il grande giorno:
+Un ultimo passo, se utilizzate Eth, abbiamo recentemente [deciso] di supportare il nuovo parametro blocco Genesi, quindi avrete bisogno di prendere la versione corretta del software per essere pronti per il grande giorno:
 
-cd ~ / costruisce / go-Ethereum /
-rilascio git checkout / 1.0.0
-tiro git
-fare Geth
+```
+cd ~/builds/go-ethereum/
+git checkout release/1.0.0
+git pull
+make geth
+```
 
-Coloro che vorrebbero essere 'pronto come possibile' in grado di seguire le istruzioni fino a questo punto, che ha detto, un git tirare appena prima che il blocco fatidico è probabilmente consigliabile utilizzare la versione più recente di qualsiasi software.
+Coloro che vogliono essere il 'piu' pronti possibile' possono limitarsi a seguire le instruzioni fino a questo punto, anche se va detto che un ```git pull``` appena prima che il blocco fatidico sia generato è probabilmente consigliabile al fine di essere sicuri di utilizzare la versione più recente dei software.
 
-Se siete stati in esecuzione i clienti prima di:
+Se avevate gia' i client in esecuzione precedentemente:
 
-    Eseguire il backup dei tasti (forse alcuni di loro sono ammissibili per i premi olimpici) - si trovano in ./ethereum/keystore
-    Elimina la tua vecchia catena prego (si trova a ./ethereum, eliminare le seguenti 3 cartelle solo: ./extra, ./state, ./blockchain)
-    Si può tranquillamente lasciare l'./ethereum/nodes, ./ethereum/history e ./ethereum/nodekey a posto
-    DAG Avere pregenerato in ./ethash non farà male, ma sentitevi liberi di cancellarli se avete bisogno di spazio
+- Fate un backup delle chiavi (forse alcune di loro sono ammissibili per i premi della release Olympic) - si trovano nella directory ./ethereum/keystore
+- Eliminate per favore la vostra vecchia blockchain (si trova nella directory ./ethereum, eliminate per favore unicamente le seguenti 3 cartelle: ./extra, ./state, ./blockchain)
+- Si possono tranquillamente lasciare al loro poste le cartelle ./ethereum/nodes, ./ethereum/history e ./ethereum/nodekey
+- Avere una DAG gia' generata nella cartella ./ethash non farà male, ma sentitevi liberi di cancellarla se avete bisogno di spazio
 
-Per una ripartizione completa di dove si trovano i file di configurazione, si prega di consultare questa pagina sul nostro forum.
+Per una ripartizione completa di dove si trovano i file di configurazione, si prega di consultare [questa pagina sul nostro forum](https://forum.ethereum.org/discussion/2114/where-are-my-config-files-go-and-cpp).
 
-Poi, è una questione di attesa per il blocco # 1028201, che all'epoca corrente risoluzione blocco, dovrebbe essere formato circa Giovedi sera GMT + 0.
+A quel punto, è tutta questione di attendere che venga generato il blocco numero ***1,028,201***, che al ritmo attuale di risoluzione dei blocchi, dovrebbe essere formato all'incirca Giovedi sera (ora di Londra, GMT + 0).
 
-Una volta che si è formata 1028201, il suo hash sarà accessibile interrogando il testnet alla console utilizzando web3.eth.getBlock (1.028.201) .hash, tuttavia abbiamo anche rendere tale valore disponibile su questo blog, così come tutti i nostri canali di social media.
+Quando il blocco numero 1,028,201 verra' generato, il suo hash sarà disponibile interrogando la testnet sulla console utilizzando il comando ```web3.eth.getBlock(1028201).hash```. Ad ogni modo, renderemo anche disponibile questo valore sul nostro blog, e così attraverso tutti i nostri [canali](https://www.facebook.com/ethereumproject) di [social](http://forum.ethereum.org/) [media](https://twitter.com/ethereumproject).
 
 Sarà quindi in grado di generare il blocco Genesi eseguendo:
 
