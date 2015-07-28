@@ -79,22 +79,29 @@ Quando il blocco numero 1,028,201 verra' generato, il suo hash sarà disponibile
 
 Sarà quindi in grado di generare il blocco Genesi eseguendo:
 
-pitone mk_genesis_block.py --extradata hash_for_ # 1028201_goes_here> genesis_block.json
+```
+python mk_genesis_block.py --extradata hash_for_#1028201_goes_here > genesis_block.json
+```
 
-Per impostazione predefinita, lo script utilizza Blockr e Blockchain.info per recuperare i Genesis risultati di pre-vendita. È inoltre possibile aggiungere l'opzione --insight se vuoi invece preferisce utilizzare il server Ethereum privato per ottenere queste informazioni.
+Da impostazione predefinita, lo script utilizza Blockr e Blockchain.info per recuperare i risultati della pre-vendita Genesis. È inoltre possibile aggiungere l'opzione ```--insight``` se invece preferite utilizzare il server privato di Ethereum per ottenere queste informazioni.
 
-Anche se non ci fornirà il blocco Genesi come un file, avremo ancora fornire il blocco hash Genesi (poco dopo che generiamo noi stessi), al fine di assicurare che i terzi file non validi o dannosi sono facilmente scartati dalla comunità.
+Anche se non forniremo il blocco Genesis in forma di file, pubblichero' invece l'hash del blocco Genesis (poco dopo averlo generato noi stessi), al fine di assicurare che files di terze parti invalidi o dannosi siano facilmente scartati dalla comunità.
 
-Quando si è soddisfatti con la generazione del blocco Genesi, è possibile caricarlo nei clienti che utilizzano questo comando:
+Quando siete soddisfatti con la generazione del blocco Genesi, potete caricarlo sui client lanciando questo comando:
 
+```
 ./build/bin/geth --genesis genesis_block.json
+```
 
 oppure:
 
+```
 ./build/eth/eth --genesis genesis_block.json
+```
 
-Da lì, istruzioni sulla creazione di un account, importare il vostro pre-vendita portafogli, transazioni, ecc, può essere trovato sulla guida 'Getting Started' Frontier in http://guide.ethereum.org/
-Un altro paio di cose ...
+Da quel punto, tutte le istruzioni sulla creazione di un account, importare il vostro portafoglio della pre-vendita, le transazioni, etc, possono essere reperite sulla guida 'Getting Started on Frontier' all'indirizzo web: http://guide.ethereum.org/
+
+## Un altro paio di cose ...
 
 Vorremmo anche dare un po 'di testa a testa sulla fase' disgelo '- il periodo durante il quale il limite di gas per blocco sarà impostato molto basso per consentire alla rete di crescere lentamente prima di transazioni possono avvenire. Si deve aspettare instabilità rete proprio all'inizio del rilascio, tra cui forcelle, potenziale esposizione anormale di informazioni sulla nostra http://stats.ethdev.com pagina e vari Peer to Peer problemi di connettività. Proprio come durante la fase olimpica, ci aspettiamo che questa instabilità di stabilirsi dopo un paio di ore / giorni.
 
@@ -104,7 +111,7 @@ Si prega di essere particolarmente attenti a siti web di terze parti e software 
 
 Infine, per chiarezza, è importante notare che il programma olimpico chiuso al blocco 1M di questa mattina, tuttavia, la generosità bug è ancora - e continuerà fino a nuovo avviso. Le vulnerabilità di sicurezza, se trovato, dovrebbero continuare ad essere segnalati https://bounty.ethdev.com/.
 
--
+---
 Aggiornamenti
 
 27/07/15: istruzioni aggiuntive per gli utenti che eseguono l'aggiornamento da installazioni precedenti
