@@ -12,38 +12,44 @@ Poiche’ la pre-vendita di Ether si è svolta interamente sulla blockchain di B
 
 Dal momento che lo script è già disponibile ed il rilascio deve essere coordinato, lo script contiene un argomento che prevede il lancio di Frontier _all'unisono_. Ma come e' possibile far cio' ***_e_*** rimanere decentralizzati?
 
-L'argomento deve essere un parametro casuale che nessuno, noi anche, in grado di prevedere. Come potete immaginare, non ci sono troppi parametri nel mondo che corrispondono a questo criterio, ma una buona è l'hash di un futuro blocco sul testnet Ethereum. Abbiamo dovuto prendere un numero di blocco, ma quale? 1.028.201 risulta essere sia primo e palindromo, proprio come ci piace. Così # 1028201 è.
+L'argomento deve essere un parametro casuale che nessuno, neppure noi, sia in grado di prevedere. Come potete immaginare, non esistono molti parametri al mondo che corrispondono a questo criterio, ma un buon esempio è l'hash di un futuro blocco sulla rete di test (testnet) di Ethereum. Abbiamo dovuto scegliere un numero di blocco, ma quale? Il numero 1,028,201 risulta essere sia primo che palindromo, proprio come piace a noi. Dunque abbiamo scelto il blocco numero 1,028,201.
 
-Sequenza di passi al rilascio:
+***_La sequenza delle fasi di lancio:_***
 
-    Passaggi finali per il rilascio rivelato: stai leggendo questo ora.
-    Block # 1028201 si forma sulla Tesnet Ethereum, e viene dato un hash.
-    L'hash viene utilizzato dagli utenti di tutto il mondo come un parametro unico per lo script di generazione blocco Genesi.
+- Le fasi finali per il rilascio di Ethereum sono state svelate: le state leggendo in questo momento.
+- Il blocco numero 1,028,201 viene creato sulla tesnet di Ethereum, e ad esso viene attribuito un hash.
+- L'hash viene utilizzato dagli utenti di tutto il mondo come parametro unico per lo script di creazione del blocco Genesis.
 
-Che potete fare ad oggi
+## Cosa potete fare ad oggi
 
-In primo luogo, è necessario installare il client. Userò Geth come esempio, ma lo stesso risultato può essere ottenuto con Eth (l’implementazione C ++ di Ethereum). Le istruzioni per l'installazione di Geth su Windows, Linux e OSX si possono trovare sulla nostra wiki.
+In primo luogo, è necessario installare il client. Userò Geth come esempio, ma lo stesso risultato può essere ottenuto con [Eth](https://github.com/ethereum/cpp-ethereum/wiki) (l’implementazione C ++ di Ethereum). Le istruzioni per l'installazione di Geth su Windows, Linux e OSX si possono trovare sulla nostra [wiki](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum).
 
-Dopo aver installato un client, è necessario scaricare lo script python che genera il file Genesi. Si chiama 'mk_genesis_block.py', e può essere scaricato qui.
+Dopo aver installato uno dei client, è necessario scaricare lo script python che genera il file Genesi. Si chiama 'mk_genesis_block.py', e può essere scaricato [a questo indirizzo](https://raw.githubusercontent.com/ethereum/genesis_block_generator/master/mk_genesis_block.py).
 
-A seconda della piattaforma, è possibile anche scaricarlo dalla console con l'installazione di curl e in esecuzione;
+A seconda della piattaforma che utilizzate, è possibile anche scaricarlo dalla console, installando curl e lanciando il comando sottostante:
 
-'''
+```
 curl -O https://raw.githubusercontent.com/ethereum/genesis_block_generator/master/mk_genesis_block.py
-'''
+```
 
-Questo creerà il file nella stessa cartella in cui avete lanciato il comando. A questo punto è necessario installare i pybitcointools creati dalla nostra stessa Vitalik Buterin. È possibile ottenere questo attraverso il gestore pip pacchetto python, così ti installare pip prima, poi gli strumenti subito dopo.
+Questo comando creerà il file nella stessa cartella in cui viene eseguito. A questo punto è necessario installare i pybitcointools creati dal nostro Vitalik Buterin. È possibile ottenere questo attraverso il gestore pip pacchetto python, così ti installare pip prima, poi gli strumenti subito dopo.
 
-Le seguenti istruzioni dovrebbero lavorare su OSX e Linux. Gli utenti di Windows, una buona notizia, navi pip con il programma di installazione standard di Python.
+Le seguenti istruzioni dovrebbero funzionare su OSX e Linux. Utenti di Windows, buona notizia per voi, pip viene fornito con il programma di installazione standard di [Python](https://www.python.org/downloads/windows/).
 
-ricciolo -O https://bootstrap.pypa.io/get-pip.py
+```
+curl -O https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
+```
 
+```
 sudo pip install bitcoin
+```
 
 o (se avete avuto già installato),
 
+```
 sudo pip install bitcoin --upgrade
+```
 
 Un ultimo passo, se si utilizza Eth, abbiamo recentemente di supportare il nuovo parametro blocco Genesi, quindi avrai bisogno di prendere la corretta versione del software per essere pronti per il grande giorno:
 
@@ -97,4 +103,4 @@ Infine, per chiarezza, è importante notare che il programma olimpico chiuso al 
 -
 Aggiornamenti
 
-27/07/15: istruzioni aggiuntive per gli utenti l'aggiornamento da precedenti installazioni
+27/07/15: istruzioni aggiuntive per gli utenti che eseguono l'aggiornamento da installazioni precedenti
