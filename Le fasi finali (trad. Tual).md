@@ -10,7 +10,7 @@ Grazie a tutti coloro che hanno dato feedback sul mio precedente post. Che ne è
 
 Gli utenti di Frontier dovranno innanzitutto generare, e poi caricare sul loro client Ethereum il blocco Genesis. Il blocco Genesis rappresenta un file di database: contiene tutte le transazioni che derivano dalla pre-vendita di Ether, e quando un utente carica questo file sul client, prende la decisione di aderire alla rete sotto i suoi termini: è un primo passo verso il consenso.
 
-Poiche’ la pre-vendita di Ether si è svolta interamente sulla blockchain di Bitcoin, i suoi contenuti sono pubblici, e chiunque può generare e verificare il blocco Genesis. Nell'interesse del decentramento e della trasparenza, Ethereum non fornirà il blocco Genesis come file da scaricare, ma ha invece creato uno script open source che chiunque può utilizzare per generare il file, il cui link si trova più avanti in questo articolo.
+Poiche’ la pre-vendita di Ether si è svolta interamente sulla blockchain di Bitcoin, i suoi contenuti sono [pubblici](https://blog.ethereum.org/2014/08/08/ether-sale-a-statistical-overview/), e chiunque può generare e verificare il blocco Genesis. Nell'interesse del decentramento e della trasparenza, Ethereum non fornirà il blocco Genesis come file da scaricare, ma ha invece creato uno script open source che chiunque può utilizzare per generare il file, il cui link si trova più avanti in questo articolo.
 
 Dal momento che lo script è già disponibile ed il rilascio deve essere coordinato, lo script contiene un argomento che prevede il lancio di Frontier _all'unisono_. Ma come e' possibile far cio' ***_e_*** rimanere decentralizzati?
 
@@ -103,13 +103,13 @@ Da quel punto, tutte le istruzioni sulla creazione di un account, importare il v
 
 ## Un altro paio di cose ...
 
-Vorremmo anche dare un po 'di testa a testa sulla fase' disgelo '- il periodo durante il quale il limite di gas per blocco sarà impostato molto basso per consentire alla rete di crescere lentamente prima di transazioni possono avvenire. Si deve aspettare instabilità rete proprio all'inizio del rilascio, tra cui forcelle, potenziale esposizione anormale di informazioni sulla nostra http://stats.ethdev.com pagina e vari Peer to Peer problemi di connettività. Proprio come durante la fase olimpica, ci aspettiamo che questa instabilità di stabilirsi dopo un paio di ore / giorni.
+Vorremmo anche darvi un po' di informazioni sulla fase di 'disgelo' - quel periodo durante il quale il limite di gas per blocco sarà impostato molto basso per consentire alla rete di crescere lentamente prima che le transazioni possano effettivamente avvenire. L'aspettativa e' che la rete sara' instabile nelle fasi iniziali del lancio, comprese forks, informazioni potenzialmente anormali visualizzabili sulla nostra pagina http://stats.ethdev.com pagina e vari problemi di connettività Peer to Peer. Proprio come durante la fase Olympic, ci aspettiamo che questa instabilità si stabilizzi dopo un paio di ore / giorni.
 
-Vorremmo anche ricordare a tutti che, mentre noi intendiamo fornire una piattaforma sicura nel lungo termine, Frontier è una versione tecnica rivolto ad un pubblico di sviluppatori, e non di un rilascio pubblico in generale. Si prega di tenere presente che il software precoce è spesso influenzata da bug, problemi con instabilità e interfacce utente complesse. Se si preferisce un più esperienza utente amichevole, ti consigliamo di aspettare il futuro Homestead o Metropolis Ethereum rilasci.
+Vorremmo anche ricordare a tutti che, mentre noi intendiamo fornire una piattaforma sicura nel lungo termine, Frontier è una versione tecnica rivolta ad un pubblico di sviluppatori, e non di pubblica fruizione generale. Si prega di tenere presente che il software in sviluppo è spesso influenzato da bugs, problemi di instabilità e complesse interfacce utente. Se si preferisce un'esperienza utente piu' amichevole, vi consigliamo di aspettare le versioni future del rilascio di Ethereum (Homestead o Metropolis).
 
-Si prega di essere particolarmente attenti a siti web di terze parti e software di origine sconosciuta - Ethereum sarà sempre e solo pubblicare il software attraverso la sua piattaforma github a https://github.com/ethereum/.
+Si prega di essere particolarmente attenti a siti web di terze parti e software di origine sconosciuta - Ethereum pubblichera' sempre e solo il proprio software attraverso la piattaforma github a https://github.com/ethereum/.
 
-Infine, per chiarezza, è importante notare che il programma olimpico chiuso al blocco 1M di questa mattina, tuttavia, la generosità bug è ancora - e continuerà fino a nuovo avviso. Le vulnerabilità di sicurezza, se trovato, dovrebbero continuare ad essere segnalati https://bounty.ethdev.com/.
+Infine, per chiarezza, è importante notare che il programma [Olympic](https://blog.ethereum.org/2015/05/09/olympic-frontier-pre-release/) e' stato chiuso al blocco numero 1 milione, questa mattina. Tuttavia, la caccia ai bug è ancora aperta - e continuerà fino a nuovo avviso. Le vulnerabilità di sicurezza, se trovate, devono essere segnalate a https://bounty.ethdev.com/.
 
 ---
 Aggiornamenti
