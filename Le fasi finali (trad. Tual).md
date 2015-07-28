@@ -1,4 +1,4 @@
-_traduzione di M.Terzi e L.M.Pedretti ([Ethereum Italia](www.ethereum-italia.it)) da un articolo originale di S. Tual, apparso [qui](https://blog.ethereum.org/2015/07/27/final-steps/)._
+_traduzione di M.Terzi e L.M.Pedretti ([Ethereum Italia](http://www.ethereum-italia.it/)) da un articolo originale di S. Tual, apparso [qui](https://blog.ethereum.org/2015/07/27/final-steps/)._
 
 # Le fasi finali
 
